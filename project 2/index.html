@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Easter Sunday</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+
+
+	<h1>Easter Sunday Finder</h1>
+
+	<div class="main">
+
+	<form method="POST" action="cgi-bin/easter.py">
+		
+
+		<input type="text" id="yr" name="year" size="30" placeholder="Year"> <br>
+
+		<br>
+
+		<div class="button-wrapper">
+		<label for="formatstyle">Select output format: </label> <br>
+		<input type="radio" name="formatstyle" id="nume" value="nume" checked="checked"> Numerically <br>
+		<input type="radio" name="formatstyle" id="verb" value="verb"> Verbally <br>
+		<input type="radio" name="formatstyle" id="both" value="both"> Both <br>
+
+		<br>
+		</div>
+		
+		<input type="submit" name="send" value="Submit">
+		<input type="reset" name="clear" value="Clear">
+
+	</form>
+	</div>
+
+</body>
+
+</html>
